@@ -1,0 +1,75 @@
+<h1 style="text-align: center;margin-bottom: 4%;">
+    'iPhone 12 Pro' may add LiDAR sensor to triple rear camera bump'
+</h1>
+<div>
+    <img style="float: left;width:500px;height:300px;margin-left: 14%;margin-right: 2%; "
+        src="https://photos5.appleinsider.com/gallery/35244-64506-35088-63966-49025931152_3828f57038_k-xl-l.jpg">
+        <iframe width="500" height="300"
+        src="https://www.youtube.com/embed/AVJUD36UZdo">
+    </iframe>
+    <div class="text" style="border: 4px solid plum;float: left;margin-top: 2%;text-align: center;padding-right: 5%;margin-left: 3%;margin-bottom: 3%;">
+        <pre><p style="font-weight: bold;font-size: 20px;">
+            <br>
+            We’re far away from the launch of the iPhone 12 series that is said to consist of four different models this
+            time. Heck, even the 2020 iPhone SE (also addressed as the iPhone 9) hasn’t been launched yet. But a new
+            leak on the internet now gives us a look at the alleged camera setup of the upcoming iPhone 12 which shared
+            an important component that was recently introduced with the 2020 iPad Pro lineup.<br>
+
+            The image of the phone was found in a build of iOS 14 by the folks at Concepts iPhone. The image doesn’t
+            show the camera module in flash and is not even a render that might give us an idea on what the upcoming
+            phone might look like. Instead, the image gives us a skeletal look of the camera module.<br>
+
+            The camera array seems to be that of the iPhone 12 Pro and the iPhone 12 Pro Max (names not confirmed).
+            Apart from the wide, ultrawide and the telephoto sensors that we also saw on the iPhone 11 Pro series, there
+            is a fourth sensor present too. This is said to be a LIDAR (LIght Detection And Ranging) scanner that made
+            its debut with the iPad Pro series that launched last month.
+            SEE ALSO: Apple's Upcoming 2020 iPhone SE Could Launch Any Minute Now
+            To accommodate the fourth sensor, Apple has seemed to shift the flash to the sensor while the four sensors
+            sit around it.<br>
+
+            Before this new image surfaced, there have been rumours of Apple including a depth sensor for its higher-end
+            iPhones - initially expected to launch this fall. Given that the LIDAR scanner was recently featured in the
+            iPads, there is a high probability that it will also make it’s way to the new iPhones.<br>
+
+            With the launch of ARKit back in 2017, Apple’s iPhones and iPads now make up for the biggest augmented
+            reality platform in the world. While we’ve seen a lot of Android smartphone manufacturers implement depth
+            sensors for AR-based applications, none have quite been able to match the dexterity of what Apple has to
+            offer.<br>
+
+            SEE ALSO: Apple Reveals New iPad Pro with LiDAR Scanner, Trackpad Support, And More
+            With the inclusion of a LIDAR scanner on the next-gen iPhones, Apple is only looking too further widen the
+            gap. Reviews of the new 2020 Apple iPad Pro have shown how well the new sensor performs albeit have pointed
+            out the limited use given the device’s form factor. But the LIDAR on the iPhone 12 Pro series will
+            definitely increase the use of a wider range of applications.<br>
+
+            Apple is said to launch up to 4 different models in the iPhone 12 series later this year: a 5.4-inch model,
+            two 6.1-inch models, and an all-new 6.7-inch variant. All the new phones are expected to have support for 5G
+            networks - a first for Apple - and will come with OLED panels that are reportedly manufactured by Samsung
+            and LG.
+
+        </p>
+        </pre>
+    </div>
+</div>
+
+<div class="container">
+    <h2>Leave us a comment</h2>
+    <div>
+        <form (ngSubmit)="onSubmit()">
+
+
+            <textarea placeholder="Add your comment!" [(ngModel)]="comment.cmnt" name="cmnt"></textarea>
+
+            <div class="btn">
+                <input type="submit" value="Comment"> &nbsp;
+                <input type="reset" value="Cancel">
+            </div>
+        </form>
+    </div>
+    <div class="card-deck">
+        <div class="card m-2 p-3" style="min-width: 90%;min-height: 60px;" *ngFor="let m of cmntArray;let i = index">
+            {{m.cmnt}}
+        </div>
+    </div>
+
+</div>

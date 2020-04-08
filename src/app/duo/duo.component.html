@@ -1,0 +1,60 @@
+<h1 style="text-align: center;margin-bottom: 4%;">
+    Google Duo Uses Machine Learning To Improve Call Quality
+</h1>
+<div>
+    <img style="float: left;width:500px;height:300px;margin-left: 14%;margin-right: 2%; "
+        src="https://sm.mashable.com/t/mashable_in/news/i/its-not-ju/its-not-just-you-a-facebook-glitch-marked-authentic-coronavi_mzq4.960.jpg">
+        <iframe width="500" height="300"
+        src="https://www.youtube.com/embed/jOahLzzsRtY">
+    </iframe>
+    <div class="text" style="border: 4px solid plum;float: left;margin-top: 2%;text-align: center;margin-left: 1%;margin-bottom: 3%;">
+        <pre><p style="font-weight: bold;font-size: 20px;text-align: left;">
+            <br>
+            People all across the world are relying more on audio and video calls given the current Coronavirus pandemic.
+            However, there are also networking and audio issues that surface while trying to stay connected to people. 
+            To that end, Google recently announced WaveNetEQ, a new PLC system that’s aimed to improve the audio quality of Google Duo calls.
+
+            As stated in the Google AI blog, WaveNetEQ is a generative model based on DeepMind’s WaveRNN technology that’s 
+            trained with massive amounts of speech data. This speech data helps the model realistically continue short speech segments.
+
+            SEE ALSO: Google Duo Now Lets You Send Notes When Your Contact Can't Do Video Calls
+
+            What this means is that during an online call, the data from these calls are divided into short chunks,
+            called packets. However, during the transmission of these ‘packets’ from the sender to receiver, these packets often
+            arrive in the wrong order creating jitter related issues. This leads to degradation in call quality. “99% of 
+            Google Duo calls need to deal with packet losses, excessive jitter or network delays. Of those calls,
+            20% lose more than 3% of the total audio duration due to network issues, and 10% of calls lose more than 8%,” reads the blog.
+
+            To better manage packet loss, we replace the NetEQ PLC component with a modified version of WaveRNN,
+            a recurrent neural network model for speech synthesis consisting of two parts, an autoregressive network and a conditioning network”, 
+            states the blog. Now, the role of an autoregressive network is to maintain the smooth flow of the signal while the ‘conditioning network’ 
+            controls and impacts the autoregressive network to produce audio consistency.
+
+            Google has been experimenting with WaveNetEQ for a while and it’s already available on Pixel 4 phones. 
+            It’s now also being launched in other phone models.
+        </p>
+        </pre>
+    </div>
+</div>
+
+<div class="container">
+    <h2 style="margin-top: 2%;">Leave us a comment</h2>
+    <div>
+        <form (ngSubmit)="onSubmit()">
+
+
+            <textarea placeholder="Add your comment!" [(ngModel)]="comment.cmnt" name="cmnt"></textarea>
+
+            <div class="btn">
+                <input type="submit" value="Comment"> &nbsp;
+                <input type="reset" value="Cancel">
+            </div>
+        </form>
+    </div>
+    <div class="card-deck">
+        <div class="card m-2 p-3" style="min-width: 90%;min-height: 60px;" *ngFor="let m of cmntArray;let i = index">
+            {{m.cmnt}}
+        </div>
+    </div>
+
+</div>
