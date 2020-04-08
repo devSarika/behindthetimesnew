@@ -1,0 +1,45 @@
+
+.cards{
+    border: 1px solid black;
+    border-bottom: 0;
+
+    
+}
+small{
+color: black;
+}
+.card-block{
+    background-color:turquoise;
+    color: azure;
+    
+    }
+    .card{
+        padding-right: 0%;
+        border: 5px solid pink;     
+    }
+    .image{
+        height: 280px;
+        width:100% ;
+    }
+    h3{
+        color: whitesmoke;
+        font-family: serif;
+    }
+    h5{
+        opacity: 40%;
+    }
+    .edu1{
+        margin-top: 2%;
+        margin-left: 3%;
+        margin-right: 3%;
+        color: whitesmoke;
+        width: 100%;
+        border: 5px solid pink;
+        background-color: crimson;
+        
+   }
+   .educard{
+       float: left;
+       margin-right: 3%;
+   }
+   

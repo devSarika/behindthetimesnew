@@ -1,0 +1,7 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css';
+body{
+    background: linear-gradient(-45deg,orange,yellow,#e73C7E,black,crimson);
+
+}
