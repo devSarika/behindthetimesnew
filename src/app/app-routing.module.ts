@@ -5,6 +5,7 @@ import { TechComponent } from './tech/tech.component';
 import { IphoneComponent } from './iphone/iphone.component';
 import { FbComponent } from './fb/fb.component';
 import { DuoComponent } from './duo/duo.component';
+import { UberComponent } from './uber/uber.component';
 
 const routes: Routes = [
   {path:'', component:HomeComponent},
@@ -12,6 +13,7 @@ const routes: Routes = [
   {path:'iphone', component:IphoneComponent},
   {path:'fb',component:FbComponent},
   {path:'duo',component:DuoComponent},
+  {path:'uber',component:UberComponent},
   {path:'**', redirectTo:''}
 ];
 
